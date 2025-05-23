@@ -3,9 +3,9 @@ import { Button } from "../../atoms";
 
 const index = () => {
   return (
-    <div className="max-w-[1264px]  mx-auto flex flex-row mt-20  pt-[114px]">
+    <div className="max-w-[1264px]  mx-auto flex flex-row mt-20  pt-[114px] ">
       {/* left */}
-      <div className="w-8/12 flex flex-col justify-start space-y-12">
+      <div className="w-8/12 flex flex-col justify-start space-y-12  z-40">
         <h1 className="">
           <span> Frontend Artist. Backend Wizard. Digital</span>
           <br />
@@ -14,13 +14,13 @@ const index = () => {
           </span>
         </h1>
         <Button
-          style="hidden sm:flex flex-row  items-center  space-x-4  font-semibold px-[24px] py-2 px-10 bg-gray-900 w-48 text-white rounded-[42px]  text-[18px]"
+          style="hidden sm:flex flex-row  items-center   space-x-4  font-semibold px-[24px] py-2 px-10 bg-gray-900 w-48 text-white rounded-[42px]  text-[18px]"
           text="Hire Me"
           icon
         />
       </div>
       {/* right */}
-      <div className="w-4/12 flex flex-col justify-center items-start p-4 ">
+      <div className="w-4/12 flex flex-col justify-center items-start p-4  z-40">
         <p className="font-medium text-[18px] text-left">
           Full-stack mastery: Delivering fast, optimized & future-proof
           apps—frontend finesse meets backend power.

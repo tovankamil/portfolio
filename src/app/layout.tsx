@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const interfont = Inter({
   variable: "--font-sans",
@@ -9,8 +10,9 @@ const interfont = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tofan",
-  description: "Fullstack Engineer",
+  title: "Tofan - Fullstack Engineer | JavaScript, React & Node.js Specialist",
+  description:
+    "Personal portfolio of Tofan, a Fullstack Engineer with [7] years of experience building scalable web apps. Explore my projects in [Your Tech Stack] and let’s collaborate!",
 };
 
 export default function RootLayout({

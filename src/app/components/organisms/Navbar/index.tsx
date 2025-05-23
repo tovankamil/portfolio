@@ -5,7 +5,7 @@ import { Button } from "../../atoms";
 const index = () => {
   return (
     <nav className="fixed w-full h-[70px] bg-white top-0 left-0 right-0 z-50">
-      <div className="max-w-[1264px]  mx-auto py-5 px-2 flex justify-between items-center">
+      <div className="max-w-[1264px]  mx-auto py-5  flex justify-between items-center">
         <div className="flex flex-row justify-start items-center space-x-[48px]">
           <Image
             src={`./icons/logo.svg`}

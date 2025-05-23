@@ -32,5 +32,6 @@ h1{
     @apply text-[var(--primary-color)] font-bold text-[72px] leading-[120%]
 }
 h2{
-  @apply text-[var(--primary-color)] font-bold text-[52px] leading-[120%]
+  @apply text-[var(--primary-color)] font-bold text-[42px] leading-[120%]
 }
+
