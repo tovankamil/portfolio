@@ -3,17 +3,17 @@ import { IconTech, Label } from "../../atoms";
 
 const Technologies = () => {
   return (
-    <div className="w-4/12">
+    <div className="w-full sm:w-6/12 px-4">
       {/* Tecnologies  */}
 
       <Label
         text=" Technologies  "
         bg
-        styleBgStyle="bg-[#FFB508] text-gray-900"
+        styleBgStyle="bg-amber-400 text-gray-900"
       />
-      <div className="experience mt-6 flex flex-col justify-start space-y-4 items-center rounded-full px-2 ">
+      <div className="experience mt-6 flex flex-col justify-start space-y-6 sm:space-y-4 items-center rounded-full px-2 ">
         {/* Front End */}
-        <div className="w-full icon hover:cursor-pointer flex  flex-row items-center justify-start space-x-2">
+        <div className="w-full icon hover:cursor-pointer flex flex-wrap sm:flex-row items-center justify-start space-x-2 sm:space-y-0">
           <IconTech image="html-2.svg" title="Html" width={24} height={24} />
           <IconTech image="css-2.svg" title="Css" width={24} height={24} />
           <IconTech
@@ -29,7 +29,7 @@ const Technologies = () => {
             title="React"
             width={16}
             height={43}
-            style="pl-2 pr-2  w-18 space-x-1"
+            style="pl-1 pr-1  w-20 space-x-1 mt-4 sm:mt-0"
             iconstyle="w-5 h-5"
           />
           <IconTech
@@ -37,12 +37,12 @@ const Technologies = () => {
             title="Tailwinds"
             width={24}
             height={24}
-            style="pl-2 pr-2 w-22  "
+            style="pl-2 pr-2 w-22 mt-4 sm:mt-0 "
           />
         </div>
 
         {/* Back End */}
-        <div className="w-full icon hover:cursor-pointer flex  flex-row items-center justify-start space-x-2">
+        <div className="w-full icon hover:cursor-pointer flex  flex-row items-center justify-start space-x-2 mt-1">
           <IconTech
             image="nodejs-2.svg"
             title="Node js"
@@ -62,7 +62,7 @@ const Technologies = () => {
           />
         </div>
         {/* Database */}
-        <div className="w-full icon hover:cursor-pointer flex  flex-row items-center justify-start space-x-2">
+        <div className="w-full icon hover:cursor-pointer flex  flex-row items-center justify-start space-x-2 mt-1">
           <IconTech
             image="mysql-2.svg"
             title="Mysql"
@@ -73,7 +73,7 @@ const Technologies = () => {
           />
         </div>
         {/* Tools */}
-        <div className="w-full icon hover:cursor-pointer flex  flex-row items-center justify-start space-x-2">
+        <div className="w-full icon hover:cursor-pointer flex  flex-wrap sm:flex-row items-center justify-start space-x-2 mt-1">
           <IconTech
             image="vscode-2.svg"
             title="Vscode"
@@ -88,7 +88,7 @@ const Technologies = () => {
             width={24}
             height={24}
             iconstyle="w-5 h-5"
-            style="pl-2 pr-2 w-22 space-x-1"
+            style="pl-2 pr-2 w-28 sm:w-22 space-x-1"
           />
           <IconTech
             image="git-2.svg"
@@ -96,7 +96,7 @@ const Technologies = () => {
             width={24}
             height={24}
             iconstyle="w-5 h-5"
-            style="pl-2 pr-2 w-22 space-x-1"
+            style="pl-2 pr-2 sm:w-22 space-x-1 mt-4 sm:mt-0"
           />
           <IconTech
             image="github-2.svg"
@@ -104,7 +104,7 @@ const Technologies = () => {
             width={24}
             height={24}
             iconstyle="w-5 h-5"
-            style="pl-2 pr-2 w-22 space-x-1"
+            style="pl-2 pr-2 w-auto sm:w-22 space-x-1 mt-4 sm:mt-0 "
           />
         </div>
         {/* Services */}
