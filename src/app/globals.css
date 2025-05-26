@@ -2,8 +2,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1B1B1B;
-  --primary-color:#1B1B1B
+  --foreground: #1b1b1b;
+  --primary-color: #1b1b1b;
 }
 
 @theme inline {
@@ -28,21 +28,21 @@ body {
 .primary-color {
   color: var(--primary-color);
 }
-h1{
-    @apply text-[var(--primary-color)] font-bold text-[46px]  sm:text-[72px] leading-[120%]
+h1 {
+  @apply text-[var(--primary-color)] font-bold text-[46px]  sm:text-[72px] leading-[120%];
 }
-h2{
-  @apply text-[var(--primary-color)] font-bold text-[42px] leading-[120%]
-}
-
-h1.blog{
-  @apply text-2xl sm:text-2xl 
+h2 {
+  @apply text-[var(--primary-color)] font-bold text-[42px] leading-[120%];
 }
 
-.tab-blog li{
-  @apply hover:cursor-pointer h-7 transition-all duration-500
+h1.blog {
+  @apply text-2xl sm:text-2xl;
 }
-.tab-blog li.active::before{
+
+.tab-blog li {
+  @apply hover:cursor-pointer h-7 transition-all duration-500;
+}
+.tab-blog li.active::before {
   content: "";
   width: 100%;
   height: 3px;
@@ -52,132 +52,133 @@ h1.blog{
   position: absolute;
   left: 0;
   animation: tabline 500ms ease;
-
 }
 /* animation */
 @keyframes tabline {
-  from{
-     width: 0%;
+  from {
+    width: 0%;
   }
-  to{
-     width: 100%;
+  to {
+    width: 100%;
   }
 }
 
 @keyframes slide {
-  to{
+  to {
     transform: translateX(-200px);
   }
-  
 }
 
 @layer base {
-.scrollball::-webkit-scrollbar-thumb{
-@apply bg-transparent shadow-sm
+  .scrollball::-webkit-scrollbar-thumb {
+    @apply bg-transparent shadow-sm;
+  }
+  .scrollball::-webkit-scrollbar {
+    @apply w-3 bg-transparent;
+  }
+  .scrollball::-webkit-scrollbar-thumb {
+    @apply rounded-none bg-transparent /*color trackbar*/;
+  }
 }
-.scrollball::-webkit-scrollbar{
-@apply w-3 bg-transparent
-}
-.scrollball::-webkit-scrollbar-thumb{
-@apply rounded-none bg-transparent /*color trackbar*/
-}
-}
-
 
 /* Expertise */
-.box-expertise::before,.box-expertise::after{
+.box-expertise::before,
+.box-expertise::after {
   content: "";
-  position: absolute; 
+  position: absolute;
   width: 100px;
   height: 100%;
   z-index: 40;
 }
-.box-expertise::before{
-  top:0;
+.box-expertise::before {
+  top: 0;
   left: 0;
-  background: linear-gradient(to left,rgba(255,255,255,0),white);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
-.box-expertise::after{
-   top:0;
+.box-expertise::after {
+  top: 0;
   right: 0;
-  background: linear-gradient(to left,white, #36050500);
+  background: linear-gradient(to left, white, #36050500);
 }
-.expertise{
+.expertise {
   animation: expertise 35s infinite linear;
 }
-.expertise:hover{
+.expertise:hover {
   animation-play-state: paused;
 }
 @keyframes expertise {
-  from{
+  from {
     transform: translateX(0);
   }
-  to{
+  to {
     transform: translateX(-100%);
   }
-  
 }
 
 /* Expertise */
-.box-content-blog::before,.box-content-blog::after{
+.box-content-blog::before,
+.box-content-blog::after {
   content: "";
-  position: absolute; 
+  position: absolute;
   width: 100px;
   height: 100%;
   z-index: 100;
 }
-.box-content-blog::before{
-  top:0;
+.box-content-blog::before {
+  top: 0;
   left: 0;
-  background: linear-gradient(to left,rgba(255,255,255,0),white);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
-.box-content-blog::after{
-   top:0;
+.box-content-blog::after {
+  top: 0;
   right: 0;
-  background: linear-gradient(to left,white, #36050500);
+  background: linear-gradient(to left, white, #36050500);
 }
-.content-blog{
+.content-blog {
   animation: content-blog 35s infinite linear;
 }
-.content-blog:hover{
+.content-blog:hover {
   animation-play-state: paused;
 }
 @keyframes content-blog {
-  from{
+  from {
     transform: translateX(0);
   }
-  to{
+  to {
     transform: translateX(-100%);
   }
-  
 }
 
 /* Detail Blog */
 
-h1.detailblog{
-  @apply text-5xl
+h1.detailblog {
+  @apply text-5xl;
 }
 
-  .highlight {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-left: 4px solid #3498db;
-            margin: 20px 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .advantages {
-            color: #27ae60;
-        }
-        .challenges {
-            color: #e74c3c;
-        }
-        .reference {
-            font-style: italic;
-            font-size: 0.9em;
-            color: #7f8c8d;
-        }
+.highlight {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  margin: 20px 0;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+.advantages {
+  color: #27ae60;
+}
+.challenges {
+  color: #e74c3c;
+}
+.reference {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
+
+h2.latestnews {
+  @apply text-2xl;
+}
