@@ -51,7 +51,9 @@ const BoxBlog: FC<props> = ({
         />
         <div className="w-full flex flex-col">
           <div className="text-xs font-semibold">{authorName}</div>
-          <div className="text-xs font-medium">{times}</div>
+          <time dateTime="2024-05-26" className="text-xs font-medium">
+            {times}
+          </time>
         </div>
         <div className="">
           <EllipsisVertical
@@ -65,6 +67,7 @@ const BoxBlog: FC<props> = ({
             <Link
               href={`/${url}`}
               className="font-medium text-xs p-1 text-center"
+              rel="canonical"
             >
               Read more
             </Link>{" "}
@@ -74,7 +77,7 @@ const BoxBlog: FC<props> = ({
       {/* end Author */}
 
       {/* Title */}
-      <div className="mt-4 space-y-2">
+      <div className=" space-y-2 mt-8">
         <h1 className="blog line-clamp-2 whitespace-normal ">{title}</h1>
         <p className="text-sm line-clamp-6 max-w-sm whitespace-normal text-[#212121]">
           {content}

@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="s-full  sm:w-6/12 flex flex-col space-y-24">
             <div className="flex flex-col justify-start space-y-10">
               <h3 className="text-[49px]/12 font-extrabold z-10">
-                "I’m available for your project. Let’s align on goals and tech."
+                I’m available for your project. Let’s align on goals and tech."
               </h3>
               <p className="text-xl text-gray-300">
                 “Exceptional full-stack development by Tofan. 100% recommend for

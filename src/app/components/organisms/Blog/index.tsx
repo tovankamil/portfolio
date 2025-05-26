@@ -18,7 +18,7 @@ const Blog = () => {
           <Label text="Blog" />
 
           <div className="w-full z-30 overflow-hidden ">
-            <ul className="tab-blog w-full flex flex-wrap gap-3 mt-2 justify-around sm:justify-center font-semibold primary-color">
+            <ul className="tab-blog w-full flex flex-wrap gap-3 space-x-4 mt-2 justify-around sm:justify-center text-xl font-semibold primary-color">
               <li
                 className={`relative ${tabSelected === "javascript" ? "active" : ""}`}
                 onClick={() => setTabSelected("javascript")}
